@@ -82,6 +82,6 @@ The dataset used is the Kaggle dataset. OpenAI was used to create pseudolabels f
     - Output precision, recall, F1-score for each class
 
 ## Usage
-1. Run `feature_engineering.py` to generate `review_with_features.csv`. The important columns are `text`, `rating`, `Rating_Category`
+1. Run `feature_engineering.py` to generate `review_with_features.csv`. The important columns are `text`, `rating`, `rating_category`. The file path can be edited in `feature_engineering.py` to use another dataset.
 2. Run `review_analysis.py` to train the Random Forest classifier and view evaluation metrics.
-3. Use the resulting model for classifying new reviews.
+3. Use the resulting model for classifying new reviews. Remove the testing split part of `review_analysis.py`, using `X` and `y` as the variables.
