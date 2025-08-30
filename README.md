@@ -3,7 +3,7 @@
 ## Overview
  
 This project processes, analyses and classifies online reviews. It combines natural language processing, feature engineering
-and machine learning to indentify three types of reviews:  
+and machine learning to identify three types of reviews:  
 1. Normal - Genuine reviews
 2. Advertising - Promotional or marketing content
 3. Irrelevant content - Off-topic or vague, unhelpful reviews  
