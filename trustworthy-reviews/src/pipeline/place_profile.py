@@ -1,4 +1,4 @@
-def build_profile(place: dict) -> str:
+def build_profile(place: dict) -> str: # build a profile of a location from its reviews
     name = (place or {}).get("place_name") or (place or {}).get("name") or ""
     cat  = (place or {}).get("place_category") or (place or {}).get("category") or ""
     bits = []

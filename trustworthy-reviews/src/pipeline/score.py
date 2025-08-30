@@ -14,6 +14,7 @@ def _get_clf():
         _clf = joblib.load("models_store/baseline_tfidf.pkl")
     return _clf
 
+# takes a new review and runs it through the entire pipeline to give it a final score or classification
 def score_one(review: dict, place: dict):
     text = (review.get("text") or "").strip()
     probs = {k: 0.0 for k in LABELS}

@@ -1,5 +1,6 @@
 from pydantic import BaseModel
 
+# defined data structures for requests and responses (ensuring consistency in data format)
 class Place(BaseModel):
     id: str | None = None
     name: str | None = None

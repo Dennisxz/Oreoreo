@@ -6,6 +6,7 @@ ZW_RE  = re.compile(r"[\u200B-\u200D\uFEFF]")
 MULTI_WS = re.compile(r"\s+")
 URL_RE = re.compile(r"(https?://|www\.)", re.I)
 
+# helper functions for normalizing text that are used across the project
 def normalize_text(s: str) -> str:
     if not isinstance(s, str): return ""
     s = unidecode(s)

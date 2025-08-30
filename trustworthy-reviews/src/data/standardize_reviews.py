@@ -23,6 +23,7 @@ def coerce01(s):
     # turn yes/true/1 → 1, else 0
     return s.astype(str).str.lower().isin(["1","true","yes","y"]).astype("int32")
 
+# cleans and formats data
 def main():
     if not RAW_IN.exists():
         sys.exit(f"Missing {RAW_IN}. Put your CSV there.")

@@ -1,6 +1,7 @@
 import pandas as pd
 from utils.textnorm import normalize_text, has_url, basic_stats
 
+# loads new data
 def load_reviews(path="data/processed/reviews.csv"):
     df = pd.read_csv(path)
     df["text"] = df["text"].fillna("").astype(str).map(normalize_text)

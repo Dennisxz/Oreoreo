@@ -4,6 +4,7 @@ RE_PHONE = re.compile(r"(?:\+?\d[\s\-\.()]?){8,}")
 RE_AD = re.compile(r"(promo code|discount|whatsapp|dm for price|limited offer|deal|coupon|affiliate)", re.I)
 RE_NO_VISIT = re.compile(r"\b(never been|haven'?t visited|didn'?t go|i didn'?t visit|my friend said|heard it('?s)?)\b", re.I)
 RE_IRREL = re.compile(r"\b(crypto|forex|iphone update|vpn|insurance quote)\b", re.I)
+# rules for flagging reviews based on the output of the models
 
 def ad_hits(text): 
     t = text or ""; hits=[]

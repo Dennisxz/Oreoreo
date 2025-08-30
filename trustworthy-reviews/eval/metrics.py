@@ -2,6 +2,7 @@ import pandas as pd, numpy as np
 from sklearn.metrics import classification_report, average_precision_score
 from pipeline.score import score_one
 
+# to calculate metrics like precision, recall, and F1-score
 def evaluate(df):
     y_cols = [c for c in ["ad","irrelevant","rant_no_visit"] if c in df.columns]
     y_true = df[y_cols].to_numpy(int) if y_cols else None
